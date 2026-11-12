@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Siti Hawa Ramadani">
+  <title>Biodata | Siti Hawa Ramadani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="">
+
+  <!-- HEADER: logo, menu, search -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Hawa &#128150;</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biodata.html" class="active">Biodata</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="family.html">Family</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+      </nav>
+      <div class="tools">
+        <input type="search" id="search" placeholder="Search..." oninput="search()">
+        <button class="btn light" type="button" onclick="toggleText()">Text only</button>
+        <ul id="results"></ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="center">
+      <h1>Biodata</h1>
+      <p>All about me.</p>
+    </section>
+    <p>Jump to: <a href="#details">Details</a> | <a href="#hobbies">Hobbies</a> | <a href="#skills">Skills</a></p>
+
+    <section id="details">
+      <h2>Personal details</h2>
+      <table>
+        <caption>About Siti Hawa Ramadani</caption>
+        <thead><tr><th colspan="2">Information</th><th>Details</th></tr></thead>
+        <tbody>
+          <tr><th rowspan="4">Identity</th><th>Full name</th><td><b>Siti Hawa Ramadani</b></td></tr>
+          <tr><th>Nickname</th><td>Hawa</td></tr>
+          <tr><th>UiTM ID</th><td>2024276682</td></tr>
+          <tr><th>Date of birth</th><td>18<sup>th</sup> October 2006 (<span id="age">20</span> years old)</td></tr>
+          <tr><th rowspan="3">Background</th><th>Race / Religion</th><td>Sungai / Islam</td></tr>
+          <tr><th>Nationality</th><td>Malaysian</td></tr>
+          <tr><th>Home town</th><td>Cheras, Selangor</td></tr>
+          <tr><th rowspan="2">Studies</th><th>Programme</th><td>Diploma in Information Science</td></tr>
+          <tr><th>Class</th><td><abbr title="Class code">JSI1105D</abbr></td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="3">Motto: <i>Be yourself no matter who you are</i></td></tr></tfoot>
+      </table>
+    </section>
+
+    <section class="grid grid-2">
+      <div>
+        <h2>About me</h2>
+        <p>Hello!! I&rsquo;m <b>Hawa</b>. I love <u>pink</u>, <mark>movies</mark> and being creative.
+           Watching movies shows me many <i>perspectives</i>, and I love cooking Malay food.</p>
+        <p>Fun fact: stay hydrated, H<sub>2</sub>O is life! &#128167;</p>
+        <p><del>Perfect</del> <ins>Real</ins> is better.</p>
+<pre>
+name    = "Hawa"
+likes   = pink, movies, singing
+studies = Information Science
+</pre>
+      </div>
+      <figure>
+        <img src="kindergarten.jpg" alt="Hawa at kindergarten graduation">
+        <figcaption>Little Hawa at kindergarten graduation</figcaption>
+      </figure>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <div class="grid grid-3">
+        <div class="card"><h3>&#127908; Singing</h3><p>I grew up with my Sabahan mom, and her love for singing was passed down to me.</p></div>
+        <div class="card"><h3>&#127871; Watching movies</h3><p>Movies let me see lots of perspectives.</p></div>
+        <div class="card"><h3>&#127859; Cooking</h3><p>I love cooking, especially Malay dishes.</p></div>
+      </div>
+      <h3>Things I like</h3>
+      <ul class="hearts">
+        <li>Anything pink</li>
+        <li>Movie nights</li>
+        <li>Home-cooked food</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="grid grid-2">
+      <div>
+        <h2>Skills</h2>
+        <p>Microsoft Excel</p><progress value="80" max="100"></progress>
+        <p>Microsoft Word</p><progress value="85" max="100"></progress>
+        <p>Canva</p><progress value="90" max="100"></progress>
+        <p>HTML &amp; CSS</p><progress value="70" max="100"></progress>
+      </div>
+      <div>
+        <h2>My perfect weekend</h2>
+        <ol>
+          <li>Cook a Malay breakfast.</li>
+          <li>Sing along to my playlist.</li>
+          <li>Movie marathon at night.</li>
+        </ol>
+        <h3>Strengths</h3>
+        <ul class="stars">
+          <li>Creative</li>
+          <li>Organised</li>
+          <li>Good teamwork</li>
+        </ul>
+      </div>
+    </section>
+    <p><a href="#top">Back to top</a></p>
+
+  </main>
+
+  <div id="toast"></div>
+
+  <!-- FOOTER: statement of ownership -->
+  <footer>
+    <p>This website is created and owned by <strong>Siti Hawa Ramadani</strong> (2024276682),
+       Diploma in Information Science, <abbr title="Universiti Teknologi MARA">UiTM</abbr>, for <abbr title="Introduction to Web Content Management and Design">IMD318</abbr> Individual Project.</p>
+    <address>
+      <a href="mailto:Sitihawaramadani11@gmail.com">Sitihawaramadani11@gmail.com</a> |
+      <a href="https://www.instagram.com/wascalledeve" target="_blank">@wascalledeve</a>
+    </address>
+    <p><small>Created: 12 November 2026 | Last updated: 12 November 2026</small></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

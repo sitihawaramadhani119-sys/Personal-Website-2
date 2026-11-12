@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Siti Hawa Ramadani">
+  <title>Contact | Siti Hawa Ramadani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="">
+
+  <!-- HEADER: logo, menu, search -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Hawa &#128150;</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biodata.html">Biodata</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="family.html">Family</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+      </nav>
+      <div class="tools">
+        <input type="search" id="search" placeholder="Search..." oninput="search()">
+        <button class="btn light" type="button" onclick="toggleText()">Text only</button>
+        <ul id="results"></ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="center">
+      <h1>Contact</h1>
+      <p>Say hello to me!</p>
+    </section>
+    <section class="grid grid-2">
+      <div>
+        <h2>Find me</h2>
+        <address class="card">
+          <p><b>Siti Hawa Ramadani</b><br>Diploma in Information Science, UiTM</p>
+          <p>&#128205; Cheras, Selangor, Malaysia</p>
+          <p>&#9993; <a href="mailto:Sitihawaramadani11@gmail.com">Sitihawaramadani11@gmail.com</a></p>
+          <p>&#128247; <a href="https://www.instagram.com/wascalledeve" target="_blank">@wascalledeve</a></p>
+        </address>
+      </div>
+      <form class="card" onsubmit="checkForm(event)">
+        <h2>Send a message</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name"><span class="error" id="nameError"></span>
+        <label for="email">Email</label>
+        <input type="text" id="email"><span class="error" id="emailError"></span>
+        <label for="message">Message</label>
+        <textarea id="message" rows="3"></textarea><span class="error" id="messageError"></span>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Favourite links</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <a href="https://www.pinterest.com" target="_blank"><img class="thumb" src="thumb-pinterest.svg" alt="Pinterest thumbnail"></a>
+          <h3><a href="https://www.pinterest.com" target="_blank">Pinterest</a></h3><p>My inspiration for pink things.</p>
+        </div>
+        <div class="card">
+          <a href="https://open.spotify.com/track/4gGYiGsxhPYpsGIttWLwlT" target="_blank"><img class="thumb" src="thumb-spotify.svg" alt="Spotify thumbnail"></a>
+          <h3><a href="https://open.spotify.com/track/4gGYiGsxhPYpsGIttWLwlT" target="_blank">Spotify</a></h3><p>My favourite song.</p>
+        </div>
+        <div class="card">
+          <a href="https://www.instagram.com/wascalledeve" target="_blank"><img class="thumb" src="thumb-instagram.svg" alt="Instagram thumbnail"></a>
+          <h3><a href="https://www.instagram.com/wascalledeve" target="_blank">Instagram</a></h3><p>Follow me!</p>
+        </div>
+        <div class="card">
+          <a href="https://uitm.edu.my" target="_blank"><img class="thumb" src="thumb-uitm.svg" alt="UiTM thumbnail"></a>
+          <h3><a href="https://uitm.edu.my" target="_blank">UiTM</a></h3><p>My university.</p>
+        </div>
+        <div class="card">
+          <a href="https://www.w3schools.com/html/" target="_blank"><img class="thumb" src="thumb-w3schools.svg" alt="W3Schools thumbnail"></a>
+          <h3><a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a></h3><p>Where I learned HTML.</p>
+        </div>
+        <div class="card">
+          <a href="https://pages.github.com" target="_blank"><img class="thumb" src="thumb-github.svg" alt="GitHub Pages thumbnail"></a>
+          <h3><a href="https://pages.github.com" target="_blank">GitHub Pages</a></h3><p>Where this site is hosted.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="toast"></div>
+
+  <!-- FOOTER: statement of ownership -->
+  <footer>
+    <p>This website is created and owned by <strong>Siti Hawa Ramadani</strong> (2024276682),
+       Diploma in Information Science, <abbr title="Universiti Teknologi MARA">UiTM</abbr>, for <abbr title="Introduction to Web Content Management and Design">IMD318</abbr> Individual Project.</p>
+    <address>
+      <a href="mailto:Sitihawaramadani11@gmail.com">Sitihawaramadani11@gmail.com</a> |
+      <a href="https://www.instagram.com/wascalledeve" target="_blank">@wascalledeve</a>
+    </address>
+    <p><small>Created: 12 November 2026 | Last updated: 12 November 2026</small></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

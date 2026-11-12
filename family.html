@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Siti Hawa Ramadani">
+  <title>Family | Siti Hawa Ramadani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="">
+
+  <!-- HEADER: logo, menu, search -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Hawa &#128150;</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biodata.html">Biodata</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="family.html" class="active">Family</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+      </nav>
+      <div class="tools">
+        <input type="search" id="search" placeholder="Search..." oninput="search()">
+        <button class="btn light" type="button" onclick="toggleText()">Text only</button>
+        <ul id="results"></ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="center">
+      <h1>Family</h1>
+      <p>The people I love the most.</p>
+    </section>
+    <section class="grid grid-2">
+      <figure>
+        <img src="family.jpg" alt="Hawa as a baby with her parents">
+        <figcaption>Abah, ibu and me</figcaption>
+      </figure>
+      <div>
+        <h2>Abah, ibu and me</h2>
+        <p>I am the only child, so I grew up with lots of love from my parents.</p>
+        <dl>
+          <dt>Birth order</dt><dd>1<sup>st</sup> of 1</dd>
+          <dt>Home</dt><dd>Cheras, Selangor</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section>
+      <table>
+        <caption>My family</caption>
+        <thead><tr><th>Name</th><th>Relationship</th><th>Age</th></tr></thead>
+        <tbody>
+          <tr><td>Abu Bakar bin Hamdan</td><td>Father</td><td>63</td></tr>
+          <tr><td>Rosdah @ Faridah binti Pibu</td><td>Mother</td><td>52</td></tr>
+          <tr><td>Siti Hawa Ramadani</td><td>Me</td><td>20</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <div id="toast"></div>
+
+  <!-- FOOTER: statement of ownership -->
+  <footer>
+    <p>This website is created and owned by <strong>Siti Hawa Ramadani</strong> (2024276682),
+       Diploma in Information Science, <abbr title="Universiti Teknologi MARA">UiTM</abbr>, for <abbr title="Introduction to Web Content Management and Design">IMD318</abbr> Individual Project.</p>
+    <address>
+      <a href="mailto:Sitihawaramadani11@gmail.com">Sitihawaramadani11@gmail.com</a> |
+      <a href="https://www.instagram.com/wascalledeve" target="_blank">@wascalledeve</a>
+    </address>
+    <p><small>Created: 12 November 2026 | Last updated: 12 November 2026</small></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

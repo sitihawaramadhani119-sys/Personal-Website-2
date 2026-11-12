@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Siti Hawa Ramadani">
+  <title>Experience | Siti Hawa Ramadani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="">
+
+  <!-- HEADER: logo, menu, search -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Hawa &#128150;</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biodata.html">Biodata</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="experience.html" class="active">Experience</a></li>
+          <li><a href="family.html">Family</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="sitemap.html">Site Map</a></li>
+        </ul>
+      </nav>
+      <div class="tools">
+        <input type="search" id="search" placeholder="Search..." oninput="search()">
+        <button class="btn light" type="button" onclick="toggleText()">Text only</button>
+        <ul id="results"></ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="center">
+      <h1>Experience</h1>
+      <p>My first working experience.</p>
+    </section>
+    <section class="grid grid-2">
+      <figure>
+        <img src="hospital.jpg" alt="Pantai Hospital Ampang">
+        <figcaption>Pantai Hospital Ampang</figcaption>
+      </figure>
+      <div>
+        <h2>Intern, Pantai Hospital Ampang</h2>
+        <p><b>Duration:</b> 2 months</p>
+        <p>I helped to manage and keep records. It taught me that accuracy and organisation are very important.</p>
+        <h3>What I did</h3>
+        <ul class="hearts">
+          <li>Kept and organised records</li>
+          <li>Helped with daily admin tasks</li>
+          <li>Worked with a professional team</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <table>
+        <caption>Experience summary</caption>
+        <thead><tr><th>Position</th><th>Organisation</th><th>Duration</th><th>Duties</th></tr></thead>
+        <tbody><tr><td>Intern</td><td>Pantai Hospital Ampang</td><td>2 months</td><td>Record keeping</td></tr></tbody>
+        <tfoot><tr><td colspan="4">More experience coming soon</td></tr></tfoot>
+      </table>
+    </section>
+
+  </main>
+
+  <div id="toast"></div>
+
+  <!-- FOOTER: statement of ownership -->
+  <footer>
+    <p>This website is created and owned by <strong>Siti Hawa Ramadani</strong> (2024276682),
+       Diploma in Information Science, <abbr title="Universiti Teknologi MARA">UiTM</abbr>, for <abbr title="Introduction to Web Content Management and Design">IMD318</abbr> Individual Project.</p>
+    <address>
+      <a href="mailto:Sitihawaramadani11@gmail.com">Sitihawaramadani11@gmail.com</a> |
+      <a href="https://www.instagram.com/wascalledeve" target="_blank">@wascalledeve</a>
+    </address>
+    <p><small>Created: 12 November 2026 | Last updated: 12 November 2026</small></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
